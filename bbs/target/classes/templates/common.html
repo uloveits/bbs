@@ -1,0 +1,99 @@
+<link th:href="@{/plugin/jquery-easyui-1.5.2/themes/icon.css}" rel="stylesheet"/>
+<link th:href="@{/plugin/jquery-easyui-1.5.2/themes/material/easyui.css}" rel="stylesheet"/>
+<link th:href="@{/plugin/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+<link th:href="@{/plugin/jquery/jquery.atwho.css}" rel="stylesheet"/> 
+<link th:href="@{/css/common.css}" rel="stylesheet"/>
+<script th:src="@{/plugin/jquery/jquery-3.2.1.js}"></script>
+<script th:src="@{/plugin/jquery/jquery.caret.js}"></script>
+<script th:src="@{/plugin/jquery/jquery.atwho.min.js}"></script>
+<script th:src="@{/plugin/jquery-easyui-1.5.2/jquery.easyui.min.js}"></script>
+<script th:src="@{/plugin/jquery-easyui-1.5.2/locale/easyui-lang-zh_CN.js}"></script>
+<script th:src="@{/plugin/bootstrap/js/bootstrap.min.js}"></script>
+<script th:src="@{/plugin/bootstrap/js/bootstrap-paginator.js}"></script>
+<script th:src="@{/plugin/vue.min.js}"></script>
+<script th:src="@{/js/analogClock.js}"></script>
+<script th:src="@{/js/common.js}"></script>
+<script th:src="@{/plugin/showdown.js}"></script>
+
+<button type="button" style="display: none" data-toggle="modal" data-target="#myModal_info"></button>
+<!-- 模态框（Modal） -->
+<div class="modal fade " id="myModal_info" tabindex="-1"  data-backdrop="static" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+    <div class="modal-dialog" >
+        <div class="modal-content" >
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color: #000;margin-top: -9px;">×</button>
+                <h4 class="modal-title" style="font-size: 16px;margin-top: -9px;" >消息</h4>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center;font-size: 20px;font-family: Microsoft YaHei;color: #333333;">
+                    <span style="vertical-align: middle"></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    <i class="fa fa-check"></i>
+                    <span>确定</span>
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<button type="button" style="display: none" data-toggle="modal" data-target="#myModal_confirm"></button>
+<!-- 模态框（Modal） -->
+<div class="modal fade " id="myModal_confirm" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 1070;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color: #fff">×</button>
+                <h4 class="modal-title" style="font-size: 16px;" >确定</h4>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center;font-size: 16px;font-family: Microsoft YaHei;color: #333333;">
+                   <span style="vertical-align: middle"></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    <i class="fa fa-check"></i>
+                    <span>确定</span>
+                </button>
+                <button type="button" class="btn btn-default form-control-nolabel" data-dismiss="modal">
+                    <i class="fa fa-mail-reply"></i>
+                    <span>取消</span>
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<div id="common_head">
+	<!--前面的部分 -->
+		<div id="logo"><a href="/index/"><img src="/image/head/head_logo.png"></img></a></div>
+		<div id="title">WE</div>
+		<div id="search">
+		<input id="search_content" class="form-control search clearable" placeholder="搜索..." />
+		</div>
+		<div id="search_button"><img src="/image/head/head_search.png"/></div>
+		<!--后面的部分 -->
+		<!-- 未登录 -->
+		<!-- <div id="head_SignUp" class="head_notLogin">注册</div>
+		<div id="head_or"  class="head_notLogin">|</div>
+		<div id="head_SignIn"  class="head_notLogin">登录</div> -->
+		<!-- 登录 -->
+		<!-- <div id="head_SignOut"  class="head_Login">登出</div>
+		<div id="head_or_l"  class="head_Login">|</div>
+		<div id="head_welcome" class="head_Login">欢迎  <span id="head_userName"></span></div> -->
+</div>
+<!--  <div class="stars"></div>
+ <div class="twinkling"></div>
+ <div class="clouds"></div> -->
+<div id="footer" class="container" >
+<nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: papayawhip;min-height:25px !important;height:30px;box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);">
+    <div class="navbar-inner navbar-content-center">
+        <p class="text-muted credit" style="padding: 6px;text-align:center;">
+           @2017-2018 By 一根网线丶
+        </p>
+    </div>
+</nav>
+</div>

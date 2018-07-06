@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+	<head th:include="common" />
+	<title>WE(有颜色的论坛)</title>
+	<link th:href="@{/css/subjectContent.css}" rel="stylesheet" />
+	<script th:src="@{/js/subjectContent.js}"></script>
+</head>
+<body>
+	<div class="container clearfix">
+		<div id="left_content" style="height:auto;">
+			<div class="navigation"><a href="/index/">WE</a><span></span></div>
+			<div class="subject_content">
+				<input type="hidden" id="hidLoginName" />
+				<div class="content_title">
+					<div class="content_title_top"></div>
+					<div class="content_title_botton"></div>
+				</div>
+				<div class="user_img"></div>
+				<div class="content_detail"> 
+					<div style="height:10px"></div>
+					<div style='margin-left:10px;' id="content_detail_c"></div> 
+					<div style="height:10px"></div>
+				</div>
+			</div>
+			<div class="no_reply_content">暂时没有回复，快来回复吧！！</div>
+			<div class="reply_content">
+				<div style="height:5px"></div>
+				<div class="reply_content_top">
+					<span class="replyCount" style="margin-left:10px"></span>
+					<span>回复</span>
+					<span style="margin-left:10px">|</span>
+					<span style="margin-left:10px">最新回复时间：</span>
+					<span class="replyTime"></span>   
+				</div>
+				<div class="page"></div>
+				<div class="reply_c"></div>
+			</div>
+			<div class="add_reply">
+			<div style="height:5px"></div>
+				<div class="add_reply_top">
+					<span style="margin-left:10px;color:#000;">添加一条新回复</span>
+					<span style="float:right;margin-right: 10px;cursor: pointer;" id="back_top">↑回到顶部</span>
+				</div>
+				<div class="add_reply_mid">
+					<input type='hidden' id="noticeLoginN" />
+					<input type='hidden' id="noticeUserN" />
+					<textarea id="add_reply_c" class="form-control search clearable" placeholder="请尽量让自己的回复能够对别人有帮助。"></textarea>
+					<div class="replyBtn">
+						<button id="replyBtn" class="btn btn-primary form-control-nolabel" >
+                   			<i class="fa fa-save"></i>
+                    		<span>回复</span>
+            			</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="right_content">
+			<div class="uesr_info">
+				<div class="user_img_left" id="user_info_i"><a id="myself_img"></a></div>
+				<div class="user_name" id="user_info_c"></div>
+				<div class="user_address_img"><img src="/image/ip.png" /></div>
+				<div class="user_address_txt"></div>
+				<div class="create_title"  id="create_title" title="创建新主题"><a href="/newSubject.do"><img src="/image/create.png" /></a></div>
+			</div>
+			<div class="notifications">
+				<div style="display:inline-block"><img style="height: 20px;width: 20px;" src="/image/notice.png" /></div>
+				<div id="noticeCount"></div>				
+				<div id="noticeDownBtn" title="展开"><img src="/image/down.png" /></div>
+				<div id="noticeUpBtn" title="关闭"><img src="/image/up.png" /></div>
+				<div id="deleteAllBtn" title="清空"><img src="/image/deleteAll.png" /></div>
+				<div id="notice_CC"></div>
+			</div>
+			
+			<div style="border-bottom: 4px solid #f5f6f7;border-top: 4px solid #f5f6f7;">
+				<div id="weather"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

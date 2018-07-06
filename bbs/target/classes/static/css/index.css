@@ -1,0 +1,107 @@
+
+.content {
+    margin: 0px auto 0px auto;
+/*     background-color: bisque; */
+}
+
+
+
+.all_Tab{
+	height: 35px;
+	//background-color: #CCCC99;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+}
+.tab_Cur {
+	cursor: pointer;
+	display: inline-block;
+    margin-top: 9px;
+    margin-left: 10px;
+    color:#FFFFFF;
+	background-color: #CC3300;
+    border: 1px solid #CC3300;
+    border-radius: 6px;
+    width: 48px;
+    text-align: center;
+}
+.tab {
+	cursor: pointer;
+	display:inline-block;
+	margin-top: 9px;
+    margin-left: 10px;
+    border: 1px solid #CC3300;
+    border-radius: 6px;
+	width: 48px;
+    text-align: center;
+    color:#330000;
+}
+
+.tab:hover {
+	color:#FFFFFF;
+	background-color: #CC3300;
+    border: 1px solid #CC3300;
+    border-radius: 6px;
+}
+
+.tab_content {
+	margin-top:4px;
+	height: 64px;
+    //background-color: antiquewhite;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+}
+.tab_content:hover {
+	border: 2px dashed #f9f9f9;
+}
+.uesr_info{
+	//border-bottom: 4px solid #FFCCFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+}
+.user_img {
+	cursor: pointer;
+	display:inline-block;
+	width: 48px;
+    height: 48px;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+.user_name {
+	display:inline-block;
+	margin-left:9px;
+	vertical-align: middle;
+}
+.create_title {
+	cursor: pointer;
+	float:right;
+	margin: 12px 15px 0px 0px;
+}
+
+.content_title{
+	display:inline-block;
+	vertical-align: middle;
+    margin-left: 10px;
+}
+
+.views {
+	display: inline-block;
+    vertical-align: middle;
+    float: right;
+    margin: 20px;
+    width: 26px;
+    height: 26px;
+    background-color: #FF6600;
+    border-radius: 7px;
+    text-align: center;
+    padding-top: 2px;
+    color: #ffffff;
+}
+.content_title_top{
+	cursor: pointer;
+	font-size: 18px;
+}
+.content_title_botton{
+	font-size: 6px;
+	margin-top: 7px;
+	color:#999;
+}
+

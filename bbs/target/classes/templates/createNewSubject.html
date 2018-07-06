@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+	<head th:include="common" />
+	<title>WE(有颜色的论坛)</title>
+	<link th:href="@{/css/createNewSubject.css}" rel="stylesheet" />
+	<script th:src="@{/js/createNewSubject.js}"></script>
+</head>
+<body>
+	<div class="container clearfix">
+		<div id="left_content" style="min-height:627px;">
+			<div class="navigation"><a href="/index/">WE</a><span>  >  创建新主题</span></div>
+			<div class="subject_title">主题标题</div>
+			<div class="subject_title_in"><input id="subject_title" class="form-control search clearable" placeholder="请输入主题标题，如果主题标题可以完整表达内容，下面正文可以为空。。。 " /></div>
+			<div class="subject_content">正文</div>
+			<div class="subject_content_in"><textarea id="subject_content" class="form-control search clearable" placeholder="请输入正文。。。 "></textarea></div>
+			<div class="subject_type">请选择你要发布的节点</div>
+			<div class="subject_type_in">		
+            <select id="subject_type" name="usertype" class="selectpicker show-tick form-control"  data-live-search="false">
+                                        <option value="技术">技术</option>
+                                        <option value="游戏">游戏</option>
+                                        <option value="数码">数码</option>
+                                        <option value="相亲">相亲</option>
+                                        <option value="酷工作">酷工作</option>
+                                        <option value="交易">交易</option>
+                                        <option value="城市">城市</option>
+                                        <option value="问与答">问与答</option>
+            </select>              
+			</div>
+			<div class="subject_btn">
+			<button id="CancelSubjectBtn" style=" margin-right:10px" class="btn btn-default form-control-nolabel">
+                    <i class="fa fa-mail-reply"></i>
+                    <span>取消</span>
+            </button>
+			<button id="createSubjectBtn" class="btn btn-primary form-control-nolabel" >
+                    <i class="fa fa-save"></i>
+                    <span>创建</span>
+            </button>
+              
+			</div>
+		</div>
+		<div id="right_content">
+			<div class="tips">发贴提示:</div>
+			<div class="tips_content">文明发贴 人人有责</div>
+			
+		</div>
+	</div>
+</body>
+</html>

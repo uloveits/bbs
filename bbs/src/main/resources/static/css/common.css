@@ -1,0 +1,289 @@
+/* head */
+#common_head{
+	height:50px;
+	width: 100%;
+	background-color:papayawhip;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+}
+#logo{
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	height: 50px;
+	vertical-align: middle;
+	margin: 9px 5px 0 120px;
+}
+#title {
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 600;
+    font-size: 50px;
+    color: black;
+    margin-top: -9px;
+}
+
+#search {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -11px;
+    margin-left: 35px;
+}
+#search_button {
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -11px;
+}
+#head_SignIn{
+	cursor: pointer;
+	float: right;
+    vertical-align: middle;
+    display: inline-block;
+	margin-right:2px;
+    margin-top: 14px;
+    color: brown;
+}
+/* #head_SignOut {
+	cursor: pointer;
+	float: right;
+    vertical-align: middle;
+    display: inline-block;
+	margin-right:61px;
+    margin-top: 14px;
+    color: brown;
+} */
+#head_or {
+	float: right;
+    vertical-align: middle;
+    display: inline-block;
+     margin-top: 11px;
+    margin-right: 2px;
+    font-size: 17px;
+    font-weight: 600;
+    color: currentColor;
+}
+#head_or_l {
+	float: right;
+    vertical-align: middle;
+    display: inline-block;
+     margin-top: 11px;
+    margin-right: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    color: currentColor;
+}
+#head_SignUp {
+	cursor: pointer;
+	float: right;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: 14px;
+    margin-right: 61px;
+   	color: darkred;
+}
+#head_welcome {
+	cursor: pointer;
+	float: right;
+    vertical-align: middle;
+    display: inline-block;
+	margin-right:62px;
+    margin-top: 14px;
+    color: brown;
+}
+
+body{
+	min-width: 800px; 
+	padding-bottom:50px;
+	background-color:#f5f6f7;
+	font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+}
+/* 模态框样式修正 */
+
+.modal-dialog {
+    width: 460px !important;
+    transform: translate3d(0px,180px,0px) !important;
+}
+
+.modal-header{
+ 	background-color:#CCCC99;
+ 	height: 36px;
+ 	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.modal-footer {
+	border-top: 0 !important; 
+}
+
+@media (min-width: 1440px)
+#left_content {
+    width: 920px;
+}
+
+@media (min-width: 1366px)
+#left_content {
+    width: 840px;
+}
+
+
+#left_content{
+	display:inline-block;
+	background-color: #fff;
+	//margin-left:16px;
+	margin-top:20px;
+    width: 64%;
+    max-width:850px;
+    min-width:630px;
+    height: auto;
+    //min-height:720px;
+    border-radius: 6px;
+}
+
+#right_content{
+	display: inline-block;
+    background-color: #fff;
+    margin-top: 20px;
+    width: 360px;
+   // float:right;
+    //max-width: 400px;
+    //min-width: 360px;
+    margin-left: 10px;
+    vertical-align: top;
+    border-radius: 6px;
+}
+
+.user_address_img {
+	display:inline-block;
+	vertical-align: middle;
+}
+
+.user_address_txt {
+	display:inline-block;
+	font-size: 12px;
+    color: black;
+    vertical-align: middle;
+}
+#weather {
+  margin: 0px auto;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: coral;
+  color: #ffffff;
+ 
+}
+.navigation {
+	height: 35px;
+	background-color: #fff;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	padding: 7px 0px 0px 14px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+}
+.notifications {
+	min-height: 35px;
+	height:auto;
+    padding: 7px;
+	color:#777;
+	background-color:  #FF9999;
+}
+#noticeCount {
+	display: inline-block;  
+  	vertical-align: middle;
+    color:red;
+}
+#deleteAllBtn{
+	cursor: pointer;
+	display: inline-block;  
+  	float:right;
+  	margin-right: 6px;
+}
+#noticeDownBtn {
+	cursor: pointer;
+	display: inline-block;  
+  	float:right;
+}
+#noticeUpBtn {
+	cursor: pointer;
+	display: none;  
+  	float:right;
+}
+.noticeContent {
+	display:none;
+	padding: 5px;
+	border: 4px dashed #FF9999;
+    margin-top: 8px;
+    background-color: burlywood;
+}
+.noticeC_t {
+	font-size:7px;
+}
+.noticeC_c {
+	cursor: pointer;
+	margin-top: 7px;
+	color:blueviolet;
+}
+.deleteBtn {
+	cursor: pointer;
+	float:right;
+}
+
+form {
+    margin: 0 0 20px;
+}
+.pagination-centered {
+    text-align: center;
+}
+.pagination {
+    margin: 5px 11px;
+}
+.pagination ul {
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+ul, ol {
+    margin: 0 0 10px 25px;
+    padding: 0;
+}
+.pagination ul > li {
+    display: inline;
+}
+li {
+    line-height: 20px;
+}
+.pagination ul > li:first-child > a, .pagination ul > li:first-child > span {
+    border-bottom-left-radius: 4px;
+    border-left-width: 1px;
+    border-top-left-radius: 4px;
+}
+.pagination ul > li:last-child > a, .pagination ul > li:last-child > span {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.pagination ul > li > a, .pagination ul > li > span {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fff;
+    border-color: #ddd;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+    float: left;
+    line-height: 20px;
+    padding: 4px 12px;
+    text-decoration: none;
+    cursor:pointer;
+}
+.pagination ul > .active > a, .pagination ul > .active > span {
+    color: #999;
+    cursor: default;
+}
+.pagination ul > li > a:hover, .pagination ul > li > a:focus, .pagination ul > .active > a, .pagination ul > .active > span {
+    background-color: bisque;
+}
+ 

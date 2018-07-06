@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+	<head th:include="common" />
+	<title>WE(有颜色的论坛)</title>
+	<link th:href="@{/css/index.css}" rel="stylesheet" />
+	<script th:src="@{/js/index.js}"></script>
+</head>
+<body>
+	<div class="container clearfix">
+		<div id="left_content">
+			<div class="all_Tab">
+				<div class="chooseTab tab_Cur">技术</div>
+				<div class="chooseTab tab">游戏</div>
+				<div class="chooseTab tab">数码</div>
+				<div class="chooseTab tab">相亲</div>
+				<div class="chooseTab tab">酷工作</div>
+				<div class="chooseTab tab">交易</div>
+				<div class="chooseTab tab">城市</div>
+				<div class="chooseTab tab">问与答</div>
+				<div class="chooseTab tab">最热</div>
+				<div class="chooseTab tab">全部</div>
+			</div>
+			<div id="content_list"></div>
+		</div>
+		<div id="right_content">
+			<div class="uesr_info">
+				<div class="user_img" id="user_info_i"><a id="myself_img"></a></div>
+				<div class="user_name" id="user_info_c"></div>
+				<div class="user_address_img"><img src="/image/ip.png" /></div>
+				<div class="user_address_txt"></div>
+				<div class="create_title"  id="create_title" title="创建新主题"><a href="/newSubject.do"><img src="/image/create.png" /></a></div>
+			</div>
+			<div class="notifications">
+				<div style="display:inline-block"><img style="height: 20px;width: 20px;" src="/image/notice.png" /></div>
+				<div id="noticeCount"></div>				
+				<div id="noticeDownBtn" title="展开"><img src="/image/down.png" /></div>
+				<div id="noticeUpBtn" title="关闭"><img src="/image/up.png" /></div>
+				<div id="deleteAllBtn" title="清空"><img src="/image/deleteAll.png" /></div>
+				<div id="notice_CC"></div>
+			</div>
+			
+			<!-- <div style="border-bottom: 4px solid #FFCCFF;border-top: 4px solid #FFCCFF;">
+				<div id="weather"></div>
+			</div> -->
+			<!-- <div style="border-bottom: 4px solid #FFCCFF;"> 
+			 	<div id="clock" style="margin-left:83px;"></div>
+			</div>	 -->		
+		</div>
+	</div>
+	
+</body>
+</html>

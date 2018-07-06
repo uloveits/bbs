@@ -1,0 +1,13 @@
+#######自动发送邮箱配置#########
+spring:  
+  mail:  
+    host: smtp.163.com 
+    username: im_wangxian@163.com 
+    password: wangxian226 
+    properties:  
+      mail:  
+        smtp:  
+          auth: true  
+          starttls:  
+            enable: true  
+            required: true 

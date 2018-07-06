@@ -1,0 +1,129 @@
+
+.subject_content {
+	height: auto;
+    //background-color: antiquewhite;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+}
+.no_reply_content {
+	display:none;
+	border: 2px dashed #000;
+    height: 48px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.reply_content {
+	margin-top:16px;
+    background-color: antiquewhite;
+    border-radius: 6px;
+    
+}
+.add_reply {
+	margin-top:16px;
+    background-color: antiquewhite;
+    border-radius: 6px;
+    
+}
+.reply_content_top {
+	color:#999;
+	font-size: 13px;
+	height: 21px;	
+}
+.add_reply_top {
+	color:#999;
+	font-size: 13px;
+	height: 22px;
+	border-bottom: 1px dashed #FF9999;
+}
+.add_reply_mid {
+	font-size: 13px;
+	height:200px;
+}
+#add_reply_c {
+	margin-top: 11px;
+    width: 98%;
+    margin-left: 10px;
+    height:150px;
+	resize:none
+}
+.replyBtn {
+	margin-top: 10px;
+    margin-left: 10px;
+}
+
+.content_detail {
+	margin-top:4px;
+	height:auto;
+    //background-color: antiquewhite;
+    border-top: 1px dashed #FF9999 ;
+}
+.uesr_info{
+	border-bottom: 4px solid #f5f6f7;
+}
+.user_img {
+	cursor: pointer;
+	display:inline-block;
+	width: 48px;
+    height: 48px;
+    margin-top: 7px;
+    float: right;
+    margin-right: 10px;
+}
+.user_img_left {
+	cursor: pointer;
+	display:inline-block;
+	width: 48px;
+    height: 52px;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+.user_name {
+	display:inline-block;
+	margin-left:9px;
+	vertical-align: middle;
+}
+.create_title {
+	cursor: pointer;
+	float:right;
+	margin: 12px 15px 0px 0px;
+}
+
+.content_title {
+	display:inline-block;
+	vertical-align: middle;
+    margin-left: 10px;
+    margin-top: 8px;
+}   
+.reply_content_list {
+	border-top: 1px dashed #FF9999 ;
+}
+.reply_content_title {
+	display:inline-block;
+	vertical-align: top;
+	margin-top: 6px;
+    margin-left: 10px;
+    width:600px;
+}
+.content_title_top {
+	font-size: 22px;
+}
+.reply_content_title_botton {
+	font-size: 16px;
+	margin-top: 3px;
+	word-break: break-all;
+}
+.content_title_botton{
+	font-size: 9px;
+	margin-top: 7px;
+	color:#999;
+}
+.reply_content_title_top {
+	font-size: 9px;
+	color:#999;
+  
+}
+.replyNoticeBtn{
+	display:inline-block;
+	float:right;
+	margin-right: 10px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+	<head th:include="common" />
+	<title>WE(有颜色的论坛)</title>
+	<link th:href="@{/css/personalCenter.css}" rel="stylesheet" />
+	<script th:src="@{/js/personalCenter.js}"></script>
+</head>
+<body>
+	<div class="container clearfix">
+		<div id="left_content" style="background-color: #f5f6f7;">
+			<div class="navigation"><a href="/index/">WE</a><span>>  个人中心</span></div>			
+			<div class="personalInfo">
+				<div class="user_img_left" data-toggle="modal" data-target="#myModal_eventAdd"></div>
+				<div class="user_name" style='font-size:18px;font-weight: bold;'></div>
+				<div class="user_address_img"><img src="/image/ip.png" /></div>
+				<div class="user_address_txt"></div>
+				<div class="editInfo"  id="editInfo" title="编辑"><a><img style='width:20px;margin-top: 7px;' src="/image/edit.png" /></a></div>
+			</div>
+			<div style="margin-top:10px;">
+				<div class="navigation">TA丶创建的所有主题</div>
+				<div style="background-color: antiquewhite;">
+					<div class="pageSubject"></div>
+				</div>
+				<div class="p_creatSubject"></div>
+			</div>
+			<div style="margin-top:10px;">
+				<div class="navigation">TA丶最近回复了</div>
+				<div style="background-color: antiquewhite;">
+					<div class="pageReply"></div>
+				</div>				
+				<div class="p_replyContent"></div>
+			</div>
+		</div>
+		<div id="right_content">
+			<div style='text-align:center;'>广告位 招商</div>
+			<div></div>
+		</div>
+	</div>
+	<div class="modal fade dm-modal-md" id="myModal_eventAdd" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color: #000;margin-top: -9px;">&times;</button>
+                <h4 class="modal-title" style='margin-top: -9px;'>选择头像</h4>
+            </div>
+            <div class="modal-body">
+    			<div class="container-fluid">
+    				 <div class="row" style="text-align: center;margin-top: 4px;">
+    				 	<div class="chooseImg curChoose">
+    				 		<img src='/image/user/default.png'/>
+    				 		<input type="hidden" value="default"/>
+    				 	</div>
+    				 	<div class="chooseImg">
+    				 		<img src='/image/user/user_img1.png'/>
+    				 		<input type="hidden" value="user_img1"/>
+    				 	</div>
+    				 	<div class="chooseImg">
+    				 		<img src='/image/user/user_img2.png'/>
+    				 		<input type="hidden" value="user_img2"/>
+    				 	</div>
+    				 	<div class="chooseImg">
+    				 		<img src='/image/user/user_img3.png'/>
+    				 		<input type="hidden" value="user_img3"/>
+    				 	</div>
+    				 	<div class="chooseImg">
+    				 		<img src='/image/user/user_img4.png'/>
+    				 		<input type="hidden" value="user_img4"/>
+    				 	</div>
+    				 	<div class="chooseImg">
+    				 		<img src='/image/user/user_img5.png'/>
+    				 		<input type="hidden" value="user_img5"/>
+    				 	</div>
+    				 	<div class="chooseImg">
+    				 		<img src='/image/user/user_img6.png'/>
+    				 		<input type="hidden" value="user_img6"/>
+    				 	</div>
+    				 </div>
+    				 <div class="row" style="text-align: center;margin-top: 4px;">
+    				 	<div class="chooseImg">
+    				 		<img src='/image/user/user_img7.png'/>
+    				 		<input type="hidden" value="user_img7"/>
+    				 	</div>
+    				 	<div class="chooseImg">
+    				 		<img src='/image/user/user_img8.png'/>
+    				 		<input type="hidden" value="user_img8"/>
+    				 	</div>
+    				 	<div class="chooseImg">
+    				 		<img src='/image/user/user_img9.png'/>
+    				 		<input type="hidden" value="user_img9"/>
+    				 	</div>
+    				 </div>
+    				 <div class="row" style="text-align: center;margin-top: 4px;">
+    				 	<div class="chooseImg">
+    				 		<img src='/image/user/user_img10.png'/>
+    				 		<input type="hidden" value="user_img10"/>
+    				 	</div>
+    				 	<div class="chooseImg">
+    				 		<img src='/image/user/user_img11.png'/>
+    				 		<input type="hidden" value="user_img11"/>
+    				 	</div>
+    				 </div>
+    				  <div class="row" style="text-align: center;margin-top: 4px;">
+    				 	<div><img src='/image/add_img.png'/></div>
+    				 </div>
+    			</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default form-control-nolabel" data-dismiss="modal">
+                    <i class="fa fa-mail-reply"></i>
+                    <span>取消</span>
+                </button>
+                <button type="button" id="changeImgBtn" class="btn btn-primary">
+                    <i class="fa fa-check"></i>
+                    <span>确定</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
