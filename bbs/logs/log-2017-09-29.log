@@ -1,3 +1,0 @@
-10:11:40.304 [RMI TCP Connection(2)-192.168.74.208] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested. 
-10:11:40.311 [RMI TCP Connection(2)-192.168.74.208] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3510bbed: startup date [Mon Sep 25 18:02:18 CST 2017]; root of context hierarchy 
-10:11:40.417 [RMI TCP Connection(2)-192.168.74.208] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown 
